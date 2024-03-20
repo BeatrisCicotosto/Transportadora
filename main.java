@@ -1,12 +1,10 @@
-import Endereco;
-import Motorista;
-import CNH;
+package transportadora;
 
-public class Main {
-
+public class main {
 	public static void main(String[] args) {
-
-		CNH cnh1 = new CNH("1");
+		Data validadeCNH = new Data(19,3,2024);
+		CNH cnh1 = new CNH("125476467", Categoria.A, validadeCNH);
+		cnh1.exibirCNH();
 
 		Endereco endereco1 = new Endereco("Rua Piu XII", 12, "Centro", "Londrina", "PR", 86010070);
 
@@ -49,3 +47,4 @@ public class Main {
 	}
 
 }
+
