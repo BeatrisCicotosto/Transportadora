@@ -1,11 +1,11 @@
-package classeCNH;
+package transportadora;
 
 public class CNH {
 	private String numero;
-	private String categoria;
-	private classeData validade;
+	private Categoria categoria;
+	private Data validade;
 	
-	public CNH(String numero, String categoria, classeData validade) {
+	public CNH(String numero, Categoria categoria, Data validade) {
 		this.numero=numero;
 		this.categoria=categoria;
 		this.validade=validade;
@@ -17,16 +17,16 @@ public class CNH {
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
-	public String getCategoria() {
+	public Categoria getCategoria() {
 		return categoria;
 	}
-	public void setCategoria(String categoria) {
+	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
-	public classeData getValidade() {
+	public Data getValidade() {
 		return validade;
 	}
-	public void setValidade(classeData validade) {
+	public void setValidade(Data validade) {
 		this.validade= validade;
 	}
 	
@@ -36,4 +36,11 @@ public class CNH {
         System.out.print("Validade: ");
         validade.exibirData(); 
     }
+	public void editarCNH(String novoNumero, Categoria novaCategoria, Data novaValidade) {
+		this.numero = novoNumero;
+		this.categoria = novaCategoria;
+		this.validade = novaValidade;
+		
+	}
 }
+
