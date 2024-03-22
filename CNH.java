@@ -1,4 +1,5 @@
-package transportadora;
+import Data;
+import Categoria;
 
 public class CNH {
 	private String numero;

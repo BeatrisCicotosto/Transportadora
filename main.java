@@ -1,5 +1,3 @@
-package transportadora;
-
 public class main {
 	public static void main(String[] args) {
 		Data validadeCNH = new Data(19,3,2024);

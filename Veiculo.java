@@ -1,5 +1,5 @@
-import tipoVeiculo;
-import capacidadeCarga;
+import TipoVeiculo;
+import CapacidadeCarga;
 
 public class Veiculo {
 	String placa;
